@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "example_bucket" {
-  bucket = var.bucket_name
+resource "aws_s3_bucket" "venkymaluma1234" {
+  bucket = var.venkymaluma1234
 
   versioning {
     enabled = true
