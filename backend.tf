@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "venkymaluma"
     key            = "my-terraform-environment/main"
-    region         = "us-east-1"
+    region         = "us-west-2"
     dynamodb_table = "mrcloudbook-dynamo-db-table"
   }
 }
