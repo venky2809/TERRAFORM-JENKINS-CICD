@@ -1,9 +1,11 @@
 resource "aws_s3_bucket" "venkymaluma" {
   bucket = "venkymaluma"
+  acl    = "private"
+}
 
-  versioning {
-    enabled = true
+resource "aws_s3_bucket_versioning" "venkymaluma_versioning" {
+  bucket = aws_s3_bucket.venkymaluma.id
+  versioning_configuration {
+    status = "Enabled"
   }
-
-  acl = var.acl
 }
