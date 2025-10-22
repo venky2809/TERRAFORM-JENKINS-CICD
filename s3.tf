@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "venkymaluma1234" {
+resource "aws_s3_bucket" "venkymaluma" {
   bucket = venkymaluma1234
 
   versioning {
